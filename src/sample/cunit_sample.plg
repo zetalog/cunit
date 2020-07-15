@@ -1,0 +1,108 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: cunit32 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /I "..\include" /D "_DEBUG" /D "WIN32" /D "_WINDOWS" /D "_MBCS" /D "CUNIT_DLL" /Fp"..\obj\debug\cunit32/cunit32.pch" /YX"cunit_int.h" /Fo"..\obj\debug\cunit32/" /Fd"..\obj\debug\cunit32/" /FD /GZ /c 
+"N:\cunit\lib\case.c"
+"N:\cunit\lib\console.c"
+"N:\cunit\lib\equals.c"
+"N:\cunit\lib\output.c"
+"N:\cunit\lib\result.c"
+"N:\cunit\lib\runner.c"
+"N:\cunit\lib\suite.c"
+"N:\cunit\lib\test.c"
+"N:\cunit\lib\throw.c"
+"N:\cunit\lib\vector.c"
+]
+Creating command line "cl.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP2.tmp" 
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:yes /pdb:"..\bin\debug/cunit32.pdb" /debug /machine:I386 /def:".\cunit32.def" /out:"..\bin\debug/cunit32.dll" /implib:"..\bin\debug/cunit32.lib" /pdbtype:sept 
+\cunit\obj\debug\cunit32\case.obj
+\cunit\obj\debug\cunit32\console.obj
+\cunit\obj\debug\cunit32\equals.obj
+\cunit\obj\debug\cunit32\output.obj
+\cunit\obj\debug\cunit32\result.obj
+\cunit\obj\debug\cunit32\runner.obj
+\cunit\obj\debug\cunit32\suite.obj
+\cunit\obj\debug\cunit32\test.obj
+\cunit\obj\debug\cunit32\throw.obj
+\cunit\obj\debug\cunit32\vector.obj
+]
+Creating command line "link.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP3.tmp"
+<h3>Output Window</h3>
+Compiling...
+case.c
+console.c
+equals.c
+output.c
+result.c
+runner.c
+suite.c
+test.c
+throw.c
+vector.c
+Linking...
+   Creating library ..\bin\debug/cunit32.lib and object ..\bin\debug/cunit32.exp
+<h3>
+--------------------Configuration: cunit_sample - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /I "..\..\include" /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"..\..\obj\debug\cunit_sample/cunit_sample.pch" /YX /Fo"..\..\obj\debug\cunit_sample/" /Fd"..\..\obj\debug\cunit_sample/" /FD /GZ /c 
+"N:\cunit\src\sample\cunit_sample.c"
+]
+Creating command line "cl.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP7.tmp" 
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8.tmp" with contents
+[
+cunit32.lib kernel32.lib user32.lib gdi32.lib winspool.lib /nologo /subsystem:console /incremental:yes /pdb:"..\..\bin\debug/cunit_sample.pdb" /debug /machine:I386 /out:"..\..\bin\debug/cunit_sample.exe" /pdbtype:sept /libpath:"..\..\bin\debug" 
+\cunit\obj\debug\cunit_sample\cunit_sample.obj
+\cunit\bin\debug\cunit32.lib
+]
+Creating command line "link.exe @E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP8.tmp"
+<h3>Output Window</h3>
+Compiling...
+cunit_sample.c
+Linking...
+Creating temporary file "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.bat" with contents
+[
+@echo off
+\cunit\bin\debug\cunit_sample.exe
+]
+Creating command line "E:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA.bat"
+Unit testing...
+sample_case_success:......................Success
+sample_case_failure:........................Error
+n:\cunit\src\sample\cunit_sample.c(58), Value(char) 'b' does not equal 'a'.
+sample_case_error:..........................Error
+n:\cunit\src\sample\cunit_sample.c(100), Exceptions will be caught as errors.
+sample_case_error:..........................Error
+n:\cunit\src\sample\cunit_sample.c(100), Exceptions will be caught as errors.
+sample_case_failure:........................Error
+n:\cunit\src\sample\cunit_sample.c(58), Value(char) 'b' does not equal 'a'.
+sample_case_success:......................Success
+sample_case_success:......................Success
+sample_case_failure:........................Error
+n:\cunit\src\sample\cunit_sample.c(58), Value(char) 'b' does not equal 'a'.
+sample_case_error:..........................Error
+n:\cunit\src\sample\cunit_sample.c(100), Exceptions will be caught as errors.
+run 9 cases. success 3, failure 3, error 3.
+total time 0.10 seconds
+sample_case_success:......................Success
+run 1 cases. success 1, failure 0, error 0.
+total time 0.1000 seconds
+
+
+
+<h3>Results</h3>
+cunit_sample.exe - 2 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

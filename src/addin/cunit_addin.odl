@@ -1,0 +1,51 @@
+// cunit_addin.idl : type library source for cunit_addin.dll
+
+[	uuid(2CB2D72E-C564-4054-8BAB-18BF488C4804), version(1.0),
+	helpstring ("cunit Developer Studio Add-in") ]
+library cunit_addin
+{
+	importlib("stdole32.tlb");
+	importlib("devshl.dll");
+	importlib("ide\devdbg.pkg");
+	
+	/*
+	 * Dual interface for Commands
+	 *
+	 * All commands that your add-in adds to DevStudio
+	 * must appear in this interface.  You may use the
+	 * ClassView to add methods to this interface, which
+	 * will cause stub implementations of those methods to
+	 * appear in your Commands class.
+	 */
+	[	uuid(732E82B3-2500-40B3-9AFC-6C5BD193F00D),
+		oleautomation,
+		dual
+	]
+
+	interface ICommands : IDispatch
+	{
+		/* methods */
+		[id(1)] HRESULT RunUnitTest();
+	};
+
+	/* Class information for Commands */
+	[ uuid(F7337CBB-A795-4CC3-B2D4-67DAAB78815C) ]
+	coclass DSCommands
+	{
+		[default] interface ICommands;
+	};
+
+	/*
+	[ uuid(69FE749D-1F77-4F36-AC16-EA666D287D50) ]
+	coclass DSEvents
+	{
+		[default] interface IApplicationEvents;
+	}
+
+	[ hidden, uuid(5873E4BC-A33D-4B3A-9657-5F73E2AEEAE3) ]
+	coclass DebuggerEvents
+	{
+		[default] interface IDebuggerEvents;
+	}
+	*/
+};

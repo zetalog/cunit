@@ -1,0 +1,6 @@
+*.plg
+Makefile
+Makefile.in
+*.o
+.deps
+
