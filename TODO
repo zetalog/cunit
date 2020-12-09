@@ -1,37 +1,37 @@
-This file maintains TODO list for cunit.
-
-libcunit:
-
-	DLL support for Unix versions
-	vector.c: implement a vector structure used by others
-	TestSuite->tests implemented by vector
-	TestResult->failures,errors,listeners implemented by vector
-	bare test support: set_up/tear_down
-	cunit_equals_string: string comparation
-	cunit_equals_istring: string comparation ignore cases
-	cunit_equals_memory: memory comparation
-	cunit_equals_stream: file stream contents comparation, report offset
-	cunit_equals_lines: file stream contents comparation, report line
-	cunit_equals_descriptor: file descriptor contents comparation, report offset
-	cunit_equals_file: file contents comparation
-	cunit_equals_test: self comparation function for Test
-	cunit_assert_stdout: redirect and compare stdout output with a buffer
-	cunit_assert_stderr: redirect and compare stderr output with a buffer
-	cunit_assert_output: redirect and compare stdout/stderr output with a buffer
-	backtrace function for ELF/PE/COFF binaries
-
-samples:
-
-	custom TestRunner sample program
-	custom TestListener sample program
-
-runners:
-
-	standalone Windows GUI runner
-	standalone X-Windows GUI runner
-	DevStudio Addin runner
-
-others:
-
-	Automake/Autoconf script for compilation
-	DevStudio AppWizard of "cunit Test AppWizard"
+This file maintains TODO list for cunit.
+
+libcunit:
+
+	DLL support for Unix versions
+	vector.c: implement a vector structure used by others
+	TestSuite->tests implemented by vector
+	TestResult->failures,errors,listeners implemented by vector
+	bare test support: set_up/tear_down
+	cunit_equals_string: string comparation
+	cunit_equals_istring: string comparation ignore cases
+	cunit_equals_memory: memory comparation
+	cunit_equals_stream: file stream contents comparation, report offset
+	cunit_equals_lines: file stream contents comparation, report line
+	cunit_equals_descriptor: file descriptor contents comparation, report offset
+	cunit_equals_file: file contents comparation
+	cunit_equals_test: self comparation function for Test
+	cunit_assert_stdout: redirect and compare stdout output with a buffer
+	cunit_assert_stderr: redirect and compare stderr output with a buffer
+	cunit_assert_output: redirect and compare stdout/stderr output with a buffer
+	backtrace function for ELF/PE/COFF binaries
+
+samples:
+
+	custom TestRunner sample program
+	custom TestListener sample program
+
+runners:
+
+	standalone Windows GUI runner
+	standalone X-Windows GUI runner
+	DevStudio Addin runner
+
+others:
+
+	Automake/Autoconf script for compilation
+	DevStudio AppWizard of "cunit Test AppWizard"

@@ -1,9 +1,9 @@
-;cunit_addin.def : Declares the module parameters for the DLL.
-;Copyright 2004 ZETALOG.  All Rights Reserved.
-
-LIBRARY      cunit_addin
-EXPORTS
-	DllCanUnloadNow PRIVATE
-	DllGetClassObject PRIVATE
-	DllRegisterServer PRIVATE
-	DllUnregisterServer PRIVATE
+;cunit_addin.def : Declares the module parameters for the DLL.
+;Copyright 2004 ZETALOG.  All Rights Reserved.
+
+LIBRARY      cunit_addin
+EXPORTS
+	DllCanUnloadNow PRIVATE
+	DllGetClassObject PRIVATE
+	DllRegisterServer PRIVATE
+	DllUnregisterServer PRIVATE
