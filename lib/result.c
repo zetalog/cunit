@@ -167,7 +167,7 @@ CUNITEXT void cunit_add_error(IN TestResult result, IN Test test, IN Throwable e
 CUNITEXT void cunit_start_test(IN TestResult result, IN Test test) {
     int count = 0;
     int index;
-    
+
     if (test)
         count = test->counter(test);
     result->runs += count;
@@ -181,7 +181,7 @@ CUNITEXT void cunit_start_test(IN TestResult result, IN Test test) {
 
 CUNITEXT void cunit_end_test(IN TestResult result, IN Test test) {
     int index;
-    
+
     for (index = 0; index < result->listener_count; index++) {
         TestListener listener = result->listeners[index];
         if (listener && listener->end_test)

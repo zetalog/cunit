@@ -77,7 +77,7 @@ static void replace_percentm(const char *inbuffer, char *outbuffer, int olen) {
     olen--;
     for (t1 = outbuffer; (ch = *inbuffer) && t1-outbuffer < olen ; ++inbuffer)
         if (inbuffer[0] == '%' && inbuffer[1] == 'm')
-            for (++inbuffer, t2 = (errno > 10000) 
+            for (++inbuffer, t2 = (errno > 10000)
                  ? strerror(errno)
                  : strerror(errno);
                  (t2 && t1-outbuffer < olen) && (*t1 = *t2++);

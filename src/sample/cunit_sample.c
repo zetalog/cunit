@@ -184,5 +184,5 @@ int main(int argc, char **argv) {
     CUNIT_RUN_SUITE(sample_suite_mix);
     /* run single test case */
     CUNIT_RUN_CASE(sample_case_success);
-    exit(0);
+    return 0;
 }

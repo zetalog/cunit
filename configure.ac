@@ -3,16 +3,14 @@
 
 AC_PREREQ(2.57)
 AC_INIT(cunit, 0.8)
-AM_INIT_AUTOMAKE(cunit, 0.8)
+AM_INIT_AUTOMAKE
 AM_CONFIG_HEADER([config.h])
 
 # Checks for programs.
 AC_PROG_CXX
 AC_PROG_CC
 if test x$GCC = xyes ; then
-    if $CC --version | grep '3\.3' > /dev/null; then
-        CFLAGS="$CFLAGS -fms-extensions"
-    fi
+    CFLAGS="$CFLAGS -fms-extensions"
 fi
 AC_PROG_MAKE_SET
 AC_PROG_RANLIB

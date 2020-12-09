@@ -1,7 +1,7 @@
 #!/bin/sh
 
 echo -n 'running aclocal.......'
-if ! aclocal-1.6
+if ! aclocal
 then
     echo 'error in aclocal!'
     exit -1
@@ -25,7 +25,7 @@ fi
 echo 'done'
 
 echo -n 'running automake......'
-if ! automake-1.6 --add-missing
+if ! automake --add-missing
 then
     echo 'error in automake!'
     exit -1
